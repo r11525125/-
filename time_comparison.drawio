@@ -1,0 +1,165 @@
+<mxfile host="Electron" modified="2024-12-19T00:00:00.000Z" agent="Mozilla/5.0" version="21.0.0">
+  <diagram name="Scheduling Time Comparison" id="time-comparison-ieee">
+    <mxGraphModel dx="800" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="700" pageHeight="420" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Scheduling Time Comparison (log scale)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="150" y="15" width="400" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Y-axis label -->
+        <mxCell id="ylabel" value="Configuration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333;rotation=-90" vertex="1" parent="1">
+          <mxGeometry x="10" y="180" width="80" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- X-axis label -->
+        <mxCell id="xlabel" value="Time (ms)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="320" y="365" width="80" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Axis lines -->
+        <mxCell id="yaxis" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#333333" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="340" as="sourcePoint" />
+            <mxPoint x="120" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xaxis" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#333333" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="340" as="sourcePoint" />
+            <mxPoint x="650" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- X-axis scale marks (log scale: 0.1, 1, 10, 100, 200) -->
+        <mxCell id="x1" value="0.1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="130" y="342" width="30" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="x2" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="245" y="342" width="30" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="x3" value="10" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="370" y="342" width="30" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="x4" value="100" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="495" y="342" width="30" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="x5" value="200" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="600" y="342" width="30" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Grid lines -->
+        <mxCell id="g1" value="" style="endArrow=none;html=1;strokeWidth=0.5;strokeColor=#CCCCCC;dashed=1" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="340" as="sourcePoint" />
+            <mxPoint x="260" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g2" value="" style="endArrow=none;html=1;strokeWidth=0.5;strokeColor=#CCCCCC;dashed=1" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="340" as="sourcePoint" />
+            <mxPoint x="385" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g3" value="" style="endArrow=none;html=1;strokeWidth=0.5;strokeColor=#CCCCCC;dashed=1" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="340" as="sourcePoint" />
+            <mxPoint x="510" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Y-axis labels -->
+        <mxCell id="y1" value="5 Switches" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="40" y="75" width="75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="y2" value="3 Switches" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="y3" value="1 Switch" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="40" y="265" width="75" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- 5 Switches bars -->
+        <!-- CG: 156ms -> log scale position ~555 -->
+        <mxCell id="bar5_cg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="70" width="435" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bar5_cg_label" value="CG: 156 ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#FFFFFF" vertex="1" parent="1">
+          <mxGeometry x="460" y="70" width="80" height="25" as="geometry" />
+        </mxCell>
+        <!-- ML: 0.314ms -> log scale position ~175 -->
+        <mxCell id="bar5_ml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="100" width="55" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bar5_ml_label" value="ML: 0.31 ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="180" y="100" width="80" height="25" as="geometry" />
+        </mxCell>
+        <!-- Speedup annotation -->
+        <mxCell id="speed5" value="497x" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="570" y="80" width="50" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 3 Switches bars -->
+        <!-- CG: 118ms -> log scale position ~520 -->
+        <mxCell id="bar3_cg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="165" width="395" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bar3_cg_label" value="CG: 118 ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#FFFFFF" vertex="1" parent="1">
+          <mxGeometry x="420" y="165" width="80" height="25" as="geometry" />
+        </mxCell>
+        <!-- ML: 0.227ms -> log scale position ~165 -->
+        <mxCell id="bar3_ml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="195" width="45" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bar3_ml_label" value="ML: 0.23 ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="170" y="195" width="80" height="25" as="geometry" />
+        </mxCell>
+        <!-- Speedup annotation -->
+        <mxCell id="speed3" value="520x" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="530" y="175" width="50" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 1 Switch bars -->
+        <!-- CG: 98ms -> log scale position ~485 -->
+        <mxCell id="bar1_cg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="365" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bar1_cg_label" value="CG: 98 ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#FFFFFF" vertex="1" parent="1">
+          <mxGeometry x="395" y="260" width="75" height="25" as="geometry" />
+        </mxCell>
+        <!-- ML: 0.171ms -> log scale position ~155 -->
+        <mxCell id="bar1_ml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="290" width="35" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bar1_ml_label" value="ML: 0.17 ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="160" y="290" width="80" height="25" as="geometry" />
+        </mxCell>
+        <!-- Speedup annotation -->
+        <mxCell id="speed1" value="573x" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="500" y="270" width="50" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="560" y="50" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_cg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="570" y="58" width="20" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_cg_t" value="CG Solver" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="595" y="55" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_ml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="570" y="80" width="20" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_ml_t" value="ML + Repair" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="595" y="77" width="75" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
