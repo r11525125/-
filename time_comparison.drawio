@@ -142,21 +142,21 @@
           <mxGeometry x="500" y="270" width="50" height="25" as="geometry" />
         </mxCell>
 
-        <!-- Legend -->
-        <mxCell id="legend_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1;dashed=1" vertex="1" parent="1">
-          <mxGeometry x="560" y="50" width="120" height="55" as="geometry" />
+        <!-- Legend (bottom right, smaller) -->
+        <mxCell id="legend_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="555" y="295" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="leg_cg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
-          <mxGeometry x="570" y="58" width="20" height="14" as="geometry" />
+          <mxGeometry x="560" y="300" width="14" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="leg_cg_t" value="CG Solver" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
-          <mxGeometry x="595" y="55" width="70" height="20" as="geometry" />
+        <mxCell id="leg_cg_t" value="CG" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="578" y="297" width="30" height="16" as="geometry" />
         </mxCell>
         <mxCell id="leg_ml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;strokeWidth=1" vertex="1" parent="1">
-          <mxGeometry x="570" y="80" width="20" height="14" as="geometry" />
+          <mxGeometry x="560" y="318" width="14" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="leg_ml_t" value="ML + Repair" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333" vertex="1" parent="1">
-          <mxGeometry x="595" y="77" width="75" height="20" as="geometry" />
+        <mxCell id="leg_ml_t" value="ML" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="578" y="315" width="30" height="16" as="geometry" />
         </mxCell>
 
       </root>
