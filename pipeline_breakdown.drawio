@@ -1,0 +1,142 @@
+<mxfile host="Electron" modified="2024-12-19T00:00:00.000Z" agent="Mozilla/5.0" version="21.0.0">
+  <diagram name="Pipeline Breakdown" id="pipeline-breakdown-ieee">
+    <mxGraphModel dx="700" dy="400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="620" pageHeight="340" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Reconfiguration Time Breakdown (Total: 1.24 ms)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="120" y="15" width="380" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Stacked horizontal bar -->
+        <!-- Total width = 500px for 1.24ms, so 1ms = 403px -->
+
+        <!-- Schedule Computation: 0.171ms = 69px -->
+        <!-- ML Inference: 0.058ms = 23px -->
+        <mxCell id="bar_ml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="23" height="50" as="geometry" />
+        </mxCell>
+        <!-- Validation: 0.031ms = 13px -->
+        <mxCell id="bar_val" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#555555;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="83" y="60" width="13" height="50" as="geometry" />
+        </mxCell>
+        <!-- Repair: 0.082ms = 33px -->
+        <mxCell id="bar_repair" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#777777;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="96" y="60" width="33" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Control Plane: 1.07ms = 431px -->
+        <!-- Controller: 0.24ms = 97px -->
+        <mxCell id="bar_ctrl" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="129" y="60" width="97" height="50" as="geometry" />
+        </mxCell>
+        <!-- P4 Table: 0.52ms = 210px -->
+        <mxCell id="bar_p4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#BBBBBB;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="226" y="60" width="210" height="50" as="geometry" />
+        </mxCell>
+        <!-- GCL Deploy: 0.31ms = 125px -->
+        <mxCell id="bar_gcl" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DDDDDD;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="436" y="60" width="125" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Bracket for Schedule Computation -->
+        <mxCell id="bracket1_top" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#333333" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="55" as="sourcePoint" />
+            <mxPoint x="129" y="55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_sched" value="排程計算 13.8%" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="50" y="35" width="90" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- Bracket for Control Plane -->
+        <mxCell id="bracket2_top" value="" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#333333" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="129" y="55" as="sourcePoint" />
+            <mxPoint x="561" y="55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_ctrl" value="控制平面操作 86.2%" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="290" y="35" width="120" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- Labels below bar -->
+        <mxCell id="lbl_ml" value="ML&#xa;0.058" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=8;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="55" y="112" width="35" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_val" value="驗證&#xa;0.031" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=8;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="78" y="112" width="35" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_repair" value="修補&#xa;0.082" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=8;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="100" y="112" width="35" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ctrl" value="控制器&#xa;0.24" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="152" y="112" width="50" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_p4" value="P4 Table 更新&#xa;0.52" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="290" y="112" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_gcl" value="GCL 部署&#xa;0.31" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="473" y="112" width="60" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend_title" value="圖例 (單位: ms)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="60" y="150" width="100" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- Schedule Computation legend -->
+        <mxCell id="leg1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="172" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1_t" value="ML 推論" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="75" y="169" width="55" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#555555;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="135" y="172" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2_t" value="約束驗證" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="150" y="169" width="55" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#777777;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="210" y="172" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3_t" value="偏移修補" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="225" y="169" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- Control Plane legend -->
+        <mxCell id="leg4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="192" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4_t" value="控制器處理" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="75" y="189" width="60" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#BBBBBB;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="145" y="192" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5_t" value="P4 表格更新" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="160" y="189" width="70" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="leg6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DDDDDD;strokeColor=#222222;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="235" y="192" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="leg6_t" value="GCL 部署" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="250" y="189" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- Key insight -->
+        <mxCell id="insight_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="155" width="210" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="insight" value="💡 排程計算僅佔 13.8%&#xa;控制平面為主要瓶頸 (86.2%)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=0;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="190" height="45" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
